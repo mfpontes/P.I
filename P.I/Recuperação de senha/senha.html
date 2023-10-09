@@ -7,15 +7,12 @@
   <title>Recuperação de senha</title>
 </head>
 <body>
-    <div>
+    <div class="container-senha">
         <h1>Recuperação de senha</h1>
-        <input type="text" placeholder="Nome">
-        <br><br>
-        <input type="date" aria-placeholder="data">
-        <br><br>
-        <input type="email" placeholder="E-mail">
-        <br><br>
-        <button>Enviar</button>
+        <input id="name" type="text" name="name" placeholder="Usuário" required>
+        <input id="data" placeholder="Data de nascimento" type="text" onfocus="(this.type = 'date')"  >
+        <input id="email" type="email" name="email" placeholder="E-mail" required>
+        <button><a href="#">Enviar</a></button>
     </div>  
 </body>
 </html>
