@@ -11,32 +11,55 @@ body {
     background-color: rgb(255, 206, 244);
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 290px;
     padding: 30px 40px;
     border: 5px solid rgb(253, 33, 183);
     border-radius: 10px;
     border-style: solid;
-    color:rgb(0, 0, 0);
+    color:rgb(249, 5, 180);
     gap: 20px;
 }
 
-#username, #password {
-    height: 45px;
+#username, #senha {
+    height: 35px;
     border: none;
     border-radius: 10px;
     outline: none;
     font-size: 15px;
     box-shadow: 1px 1px 6px #0000001c;
-    padding-left: 10px;   
+    padding-left: 10px; 
 }
 
-#username:hover, #password:hover{
+#username:hover, #senha:hover{
     background-color: #f8e9f6;
+}
+
+#icon{
+  position: absolute;
+  top: 52.6%;
+  right: 545px;
+  transform: translateY(-50%);
+  background: url("./img/show.png");
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+#icon.hide{
+  background: url("./img/hide.png");
+  background-size: cover;
+}
+
+.container-login .coluna {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
 
 .container-login button {
     background-color: rgb(255, 0, 212);
-    height: 40px;
+    height: 35px;
     border: none;
     border-radius: 10px;
     outline: none;
